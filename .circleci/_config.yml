@@ -1,0 +1,9 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: buildpack-deps:focal
+    steps:
+      - checkout
+      - run: ./build.sh
